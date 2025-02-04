@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="author" content="Sam Graham">
+		<title>COMP 144 - Lab 05 Flexbox - Sam Graham</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+	<body>
+		<!-- header to display author's name and program using h1 and h2 tags -->
+		<header class="container">
+			<h1>Sam Graham</h1>
+			<h2>Interactive Media Developer</h2>
+		</header>
+		
+		<main>
+			<!-- starting section to display 3 boxes (left - center - right) horizontally in desktop, and vertically in mobile -->
+			<section class="container">
+				<div class="row">
+					<div id="left">Left</div>
+					<div id="center">Center</div>
+					<div id="right">Right</div>
+				</div>
+			</section>
+			
+			<!-- second section to display boxes containing the words "One" to "Five" which will wrap with a gap in the center of the second row depending on screen width -->
+			<section class="container">
+				<div class="row gallery">
+					<div>One</div>
+					<div>Two</div>
+					<div>Three</div>
+					<div>Four</div>
+					<div>Five</div>
+				</div>
+			</section>
+			
+			<!-- third section to display 2 rows of boxes, which will shift position and order depending on whether it is viewed on mobile or desktop-->
+			<section class="container">
+				<div class="flip-row one">
+					<div class="purple boxes">
+						<div>Left - Desktop / Tablet</div>
+						<div>Right - Mobile</div>
+					</div>
+					<div class="purple boxes">
+						<div>Center - Desktop / Tablet</div>
+						<div>Left - Mobile</div>
+					</div>
+				</div>
+				
+				<div class="flip-row two">
+					<div class="pink boxes">
+						<div>Right - Desktop / Tablet</div>
+						<div>Right - Mobile</div>
+					</div>
+					<div class="pink boxes">
+						<div>Center - Desktop / Tablet</div>
+						<div>Left - Mobile</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<footer>
+			<p>Copyright &copy; 2024 Sam Graham</p>
+		</footer>
+	</body>
+	
+	
+</html>
+<!-- Web Page Created By: Sam Graham -->

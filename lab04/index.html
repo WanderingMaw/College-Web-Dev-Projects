@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>COMP 144 - Lab04 - Sam Graham</title>
+	</head>
+
+	<body>
+		<main class="conatiner">
+			<section id="contact-form">
+				<div>
+					<h1 class="page-title">Contact Form</h1>
+					<p>Please fill in the form below. We will return your inquiry within 1-2 business days.</p>
+					
+					<form id="contact-inquiry" action="https://144.compsci.cc/submit-form/" method="post">
+						<!-- Forms to get visitor's name -->
+						<div>
+							<label for="first-name">First Name:</label>
+							<input id="first-name" type="text" name="first_name" placeholder="First Name" required>
+							
+							<label for="last-name">Last Name:</label>
+							<input id="last-name" type="text" name="last_name" placeholder="Last Name" required>
+						</div>
+						
+						<!-- Form to get visitor's email -->
+						<div>
+							<label for="email-addr">Email Address:</label>
+							<input id="email-addr" type="email" name="email_addr" placeholder="Your Email" required>
+						</div>
+						
+						<!-- Form to get visitor's phone -->
+						<div>
+							<label for="phone-num">Phone Number:</label>
+							<input id="phone-num" type="tel" name="phone_num" placeholder="Phone Number" required>
+						</div>
+						
+						<!-- Form to get visitor's preferred method of communication -->
+						<div>
+							<h3 id="contact-title">Contact Details</h3>
+							<label for="pref-comm-type">Preferred Communication Type:</label>
+							<select name="pref_comm_type" id="pref-comm-type">
+								<option value="phone">Phone</option>
+								<option value="email">Email</option>
+								<option value="sms">Text (SMS)</option>
+							</select>
+						</div>
+						
+						<div>
+							<h3 id="request-title">Request Type</h3>
+						
+						<!-- Forms to retrieve visitor's proposal request -->
+							<input type="checkbox" name="request_type[]" value="proposal_request" id="proposal-request">
+							<label for="proposal-req">Request for Proposal</label>
+							<select name="proposal_req" id="proposal-req">
+								<option value="">-- Choose --</option>
+								<option value="static-website">Static HTML/CSS Website</option>
+								<option value="dynamic-website">Dynamic HTML/CSS Website</option>
+								<option value="basic-wordpress">Basic Wordpress Website</option>
+								<option value="e-commerce">E-Commerce Website</option>
+							</select>
+							<input id="page-proposal" type="number" name="proposed_website_pages" placeholder="# Pages" min="1" max="99">
+						</div>
+						
+						<!-- Forms to retrieve visitor's tech support request -->
+						<div>
+							<input type="checkbox" name="request_type[]" value="tech_support" id="tech-support">
+							<label for="tech-supp">Technical Support</label>
+							<select name="support_type" id="tech-supp">
+								<option value="">-- Choose --</option>
+								<option value="ui/ux">User Interface/User Experience</option>
+								<option value="errors">Errors</option>
+								<option value="search-engine-placement">Search Engine Placement</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						
+						<!-- Forms to retrieve visitor's sales questions -->
+						<div>
+							<input type="checkbox" name="request_type[]" value="sales_inquiry" id="sales-inquiry">
+							<label for="sales-questions">Sales Questions</label>
+							<select name="sales_inquiry_type" id="sales-questions">
+								<option value="">-- Choose --</option>
+								<option value="website-creation">Website Creation</option>
+								<option value="seo">Search Engine Optimization</option>
+								<option value="webmastering">Webmastering</option>
+								<option value="hosting">Web Hosting</option>
+							</select>
+							<input id="budget" type="number" name="budget_total" placeholder="Budget" min="1" max="99999">
+						</div>
+						
+						<div>
+							<h3 id="urgency-title">Request Urgency</h3>
+						
+						<!-- Form to check for request urgency -->
+							<input type="radio" name="request_urgency" value="normal" id="request-urgency-normal" checked>
+							<label for="request-urgency-normal">Normal</label>
+						</div>
+						<div>
+							<input type="radio" name="request_urgency" value="elevated" id="request-urgency-elevated">
+							<label for="request-urgency-elevated">Elevated</label>
+						</div>
+						<div>
+							<input type="radio" name="request_urgency" value="high" id="request-urgency-high">
+							<label for="request-urgency-high">High Urgency</label>
+						</div>
+						
+						<!-- Comment section -->
+						<div>
+							<h3 id="comments-title">Comments</h3>
+							<label for="comments">Please provide as much information as possible about your request:</label>
+						</div>
+						<div>
+							<textarea id="comments" name="comments" placeholder="Enter Comments Here" rows="5" cols="60"></textarea>
+						</div>
+						
+						<!-- Section for submit button -->
+						<div>
+							<button class="button-1">Submit Now</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		
+		<footer>
+			<p>Copyright &copy; 2024 Sam Graham</p>
+		</footer>
+	</body>
+	
+	
+</html>
+<!-- Web Page Created By: Sam Graham -->
